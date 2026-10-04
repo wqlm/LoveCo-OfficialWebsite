@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>LoveCo第三方信息共享清单</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Microsoft Yahei", Arial, sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background: #f5f5f5;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    .header h1 {
+      margin-top: 0.67em;
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #333333;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      font-size: 17px;
+      color: #37352F;
+      margin: 20px 0 15px;
+      font-weight: 600;
+    }
+
+    .sdk-item {
+      margin-bottom: 15px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .sdk-item h3 {
+      font-size: 16px;
+      color: #37352F;
+      margin: 0 0 10px 0;
+      font-weight: 600;
+    }
+
+    .sdk-info {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sdk-info li {
+      margin: 8px 0;
+      color: #37352F;
+      font-size: 14px;
+      /* 核心：解决链接不换行问题 */
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+
+    .sdk-info li a {
+      color: #0066cc;
+      text-decoration: none;
+      /* 链接单独设置换行 */
+      word-break: break-all;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .sdk-info li a:hover {
+      text-decoration: underline;
+    }
+
+    .highlight {
+      color: #e74c3c;
+      font-weight: 600;
+    }
+
+    /* 针对极小屏手机的适配 */
+    @media (max-width: 375px) {
+      body {
+        padding: 10px;
+      }
+
+      .intro {
+        font-size: 14px;
+        padding: 12px;
+      }
+
+      .sdk-item {
+        padding: 12px;
+      }
+
+      .sdk-info li {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LoveCo第三方信息共享清单</h1>
+    </div>
+    <div class="intro">
+      为了让产品各项功能正常实现并保持稳定运行，我们可能接入第三方提供的软件开发包（SDK）或类似应用程序。对其申请获得授权的权限，我们仅能有所知悉；第三方机构为提供相应服务需要收集您的相关信息，除非该机构向我们明确披露其收集了敏感信息，否则我们无从获取您的信息。同时，对于合作方用于获取信息的软件开发包（SDK）或类似应用程序，我们也会开展严格的安全评估，以保护您的个人信息安全。下方列出了全部服务授权合作伙伴，并附其隐私政策链接或官网链接；存有疑问时，建议您阅读相应第三方的隐私政策或访问其官网了解：
+    </div>
+
+    <h2>第三方SDK目录</h2>
+
+    <div class="sdk-item">
+      <h3>1. 阿里云</h3>
+      <ul class="sdk-info">
+        <li>使用目的：提供手机号一键登录、手机号短信登录功能，发送验证码</li>
+        <li>使用场景：登录时，使用一键登录、手机号短信登录、</li>
+        <li>第三方名称：阿里云计算有限公司</li>
+        <li>
+          涉及个人信息：网络状态信息、手机号码、应用列表信息、SIM卡识别码（ICCID）、设备标识（iOS广告标识符（IDFA）、国际移动设备识别码（IMEI）、匿名设备标识符(OAID)、国际移动用户识别码（IMSI）、SIM卡序列号）、应用列表信息、基站信息
+        </li>
+        <li>第三方官网链接：<a href="https://www.aliyun.com/?spm=5176.sop_connect__home.J_3207526240.1.7fa62b82WeWts6"
+            target="_blank">https://www.aliyun.com/?spm=5176.sop_connect__home.J_3207526240.1.7fa62b82WeWts6</a></li>
+        <li>隐私政策：<a
+            href="http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html"
+            target="_blank">http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201902141711_54837.html</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>2. 微信SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：支持微信登录，微信分享</li>
+        <li>使用场景：在用户登录时使用微信登录，在用户使用微信分享时使用</li>
+        <li>第三方名称：深圳市腾讯计算机系统有限公司</li>
+        <li>涉及个人信息：设备标识符（Android如IMEI、Android ID、Serial，iOS如IDFV），MAC地址，WLAN接入点 ，分享图片或内容</li>
+        <li>第三方官网链接：<a href="https://open.weixin.gg.com/" target="_blank">https://open.weixin.gg.com/</a></li>
+        <li>隐私政策：<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&amp;t=weixin_agreement&amp;s=privacy"
+            target="_blank">https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&amp;t=weixin_agreement&amp;s=privacy</a>
+        </li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>3. 中国移动</h3>
+      <ul class="sdk-info">
+        <li>运营主体:中国移动通信集团有限公司</li>
+        <li>功能:识别用户的手机号码快速登录，以及查询、分析和风险控制。</li>
+        <li>收集个人信息类型:网络类型、网络地址、运营商类型、本机号码信息、SIM卡状态、手机设备类型、手机操作系统、硬件厂商。</li>
+        <li>隐私权政策:<a href="https://wap.cmpassport.com/resources/html/contract2.html"
+            target="_blank">https://wap.cmpassport.com/resources/html/contract2.html</a></li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>4. 联通认证SDK</h3>
+      <ul class="sdk-info">
+        <li>运营主体:中国联合网络通信集团有限公司</li>
+        <li>功能:识别用户的手机号码快速登录，以及实现业务风控</li>
+        <li>收集个人信息类型:网络类型、网络地址、运营商类型、本机手机号、手机设备类型、手机操作系统、硬件厂商。</li>
+        <li>隐私政策:<a
+            href="https://opencloud.wostore.cn/authz/resource/html/disclaimer.html?spm=a2c4g.11186623.0.0.41f1633eHxMLkQ&amp;fromsdk=true"
+            target="_blank">https://opencloud.wostore.cn/authz/resource/html/disclaimer.html?spm=a2c4g.11186623.0.0.41f1633eHxMLkQ&amp;fromsdk=true</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>5. 中国电信</h3>
+      <ul class="sdk-info">
+        <li>运营主体:中国电信集团有限公司</li>
+        <li>功能:识别用户的手机号码快速登录，以及实现业务风控</li>
+        <li>收集个人信息类型:网络IP地址、网络类型、注册手机号码、本机号码、国际移动用户标识码、应用进程信息、网络连接类型、网络状态信息、网络地址、运营商类型、手机设备类型、手机设备厂商、手机操作系统类型及版本。</li>
+        <li>隐私政策:<a
+            href="https://e.189.cn/sdk/agreement/detail.do?spm=a2c4g.11186623.0.0.41f1633eHxMLkQ&amp;appKey=E_189&amp;hidetop=true&amp;returnUrl="
+            target="_blank">https://e.189.cn/sdk/agreement/detail.do?spm=a2c4g.11186623.0.0.41f1633eHxMLkQ&amp;appKey=E_189&amp;hidetop=true&amp;returnUrl=</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3 class="highlight">6. Alipay（支付宝） SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：实现 App 订单支付、交易核验、资金结算；采集 Android ID、OAID 等设备标识用于支付风控、盗刷识别、交易欺诈防控、支付环境安全校验；App 在用户授权隐私政策后，向支付宝 SDK 传输
+          OAID 设备标识用于支付安全风控核验。</li>
+        <li>使用场景：用户发起订单支付、支付结果查询、支付安全校验环节调用 SDK，<strong>用户同意本 App 隐私政策后，将 OAID 设备标识传输至支付宝 SDK 用于风控核验。</strong></li>
+        <li>第三方名称：支付宝（中国）网络技术有限公司</li>
+        <li>涉及个人信息：网络状态信息、手机号码、设备标识（Android ID、匿名设备标识符 OAID、国际移动设备识别码 IMEI、国际移动用户识别码 IMSI、IDFV、MAC
+          地址）、应用列表信息、基站网络信息、设备硬件参数、订单交易信息。</li>
+        <li>信息使用方式及范围：支付动作触发时采集设备信息，同时向支付宝传输 OAID 完成支付环境风险判断，信息仅用于交易风控、资金安全保障、订单对账，不用于营销推送。</li>
+        <li>第三方官网链接：<a href="https://opendocs.alipay.com/" target="_blank">https://opendocs.alipay.com/</a></li>
+        <li>隐私政策：<a href="https://opendocs.alipay.com/open/01g6qm?withBrowser=1"
+            target="_blank">https://opendocs.alipay.com/open/01g6qm?withBrowser=1</a></li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>7. 微信支付 SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：帮助用户在应用内使用微信支付</li>
+        <li>使用场景：在用户使用微信支付时使用</li>
+        <li>第三方名称：财付通支付科技有限公司</li>
+        <li>涉及个人信息：设备标识符（Android如IMEI、MEID、IMSI、Android ID、Serial、ICCID，iOS如IDFV、IDFA），MAC地址，IP 地址，WLAN接入点</li>
+        <li>官网链接：<a href="https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F"
+            target="_blank">https://pay.weixin.qq.com/index.php/core/home/login?return_url=%2F</a></li>
+        <li>隐私政策：<a href="https://pay.weixin.qq.com/index.php/core/home/pay_pact_v4"
+            target="_blank">https://pay.weixin.qq.com/index.php/core/home/pay_pact_v4</a></li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3 class="highlight">8. 科大讯飞 SparkChain SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：提供星火大模型 AI 智能交互、文本处理、内容识别、智能问答、语言输入等核心 AI 能力，同时用于服务稳定性监测、数据统计分析、故障排查与服务优化</li>
+        <li>使用场景：用户使用 App 内 AI 问答、文本解析、内容生成、图像识别、语言输入等 AI 相关功能时触发调用</li>
+        <li>第三方名称：科大讯飞股份有限公司</li>
+        <li>涉及个人信息：网络状态信息、设备标识（Android ID、匿名设备标识符 OAID、国际移动设备识别码 IMEI、国际移动用户识别码 IMSI、UUID）、设备型号、系统版本、用户交互文本内容、应用运行日志。
+        </li>
+        <li>信息使用方式及范围：仅在 AI 功能调用时实时采集上传设备标识，用于设备唯一性识别、恶意请求拦截、服务故障定位，不会超出 AI 服务运维及风控场景使用。</li>
+        <li>第三方官网链接：<a href="https://www.xfyun.cn/" target="_blank">https://www.xfyun.cn/</a></li>
+        <li>隐私政策：<a href="https://www.xfyun.cn/doc/total_sdk_compliance/sparkchain_compliance.html"
+            target="_blank">https://www.xfyun.cn/doc/total_sdk_compliance/sparkchain_compliance.html</a></li>
+        <li>信息收集方式：SDK采集、用户主动提供</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3 class="highlight">9. 奇虎 360 加固 SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：App 防逆向、防篡改、盗版拦截、运行环境风险检测；采集 Android ID、OAID 设备标识识别设备运行环境，识别模拟器、调试环境、盗版篡改设备，保障 App 整体运行安全，异常崩溃日志统计。
+        </li>
+        <li>使用场景：App 启动初始化、全程后台运行安全校验阶段启用加固 SDK，实时采集设备标识做环境风险判断。</li>
+        <li>第三方名称：北京奇虎科技有限公司</li>
+        <li>涉及个人信息：网络状态信息、设备标识（Android ID、匿名设备标识符 OAID、IMEI、IMSI、MAC 地址）、系统版本、设备型号、App 签名信息、进程运行日志、应用版本信息。</li>
+        <li>信息使用方式及范围：App 启动阶段一次性采集设备标识，仅用于越狱 / 模拟器 / 篡改设备识别、应用崩溃定位，加固完成后不再持续高频上传设备标识。</li>
+        <li>第三方官网链接：<a href="https://jiagu.360.cn/" target="_blank">https://jiagu.360.cn/</a></li>
+        <li>隐私政策：<a href="https://dev.360.cn/Wiki/0-3.html" target="_blank">https://dev.360.cn/Wiki/0-3.html</a></li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>10. 极光推送SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：推送消息</li>
+        <li>第三方名称：深圳市和讯华谷信息技术有限公司</li>
+        <li>涉及个人信息：设备标识符（包括Android ID、GAID、OAID、UAID、AAID、IDFA、Boot
+          ID）：用于生成脱敏的终端用户设备唯一性标识，以确保能准确进行消息推送。设备硬件信息（包括设备型号、设备屏幕分辨率、设备硬件制造商、设备产品名称、设备存储空间）、操作系统信息（包括操作系统版本、系统名称、系统语言）：
+          用于保证服务在不同设备上的兼容性，确保消息准确下发。网络信息（包括网络类型、运营商信息、IP地址、DHCP、WIFI状态信息）：用于判断SDK与服务器的网络连接状态，保证服务的稳定性和连续性。推送信息日志：用于您查询推送服务记录，了解推送信息送达的情况。设备标识符（包括IMEI、MAC、IMSI）:用于对生成终端用户设备唯一标识的补充，提升唯一设备标识的准确性，进而提升推送的精确度和触达率。网络信息（包括SSID、BSSID、WiFi列表信息、基站信息、SIM卡状态）:用于判定模糊位置信息，选择就近推送服务节点提供推送服务，提升推送触达率。
+          软件列表信息（包括软件列表及软件运行列表信息）：我们采用合并链路技术进⾏信息推送，当一个设备有多个APP的推送链路同时活跃时，我们采用合并链路技术，随机合并成一条链路，以达到为用户省电省流量的目的，当一个设备有离线推送消息待下发的场景时，通过关联启动功能可以下发离线消息，当您关闭这项服务时，关联启动也同时会关闭，会导致电量和流量消耗加大，同时消息触达率也会降低。
+        </li>
+        <li>官网链接：<a href="https://www.jiguang.cn/" target="_blank">https://www.jiguang.cn/</a></li>
+        <li>隐私政策：<a href="https://www.jiguang.cn/license/privacy"
+            target="_blank">https://www.jiguang.cn/license/privacy</a></li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>11. 华为推送</h3>
+      <ul class="sdk-info">
+        <li>使用目的：推送消息</li>
+        <li>第三方名称：华为终端有限公司</li>
+        <li>涉及个人信息：应用基本信息，应用内设备标识符，设备的硬件信息，系统基本信息和系统设置信息</li>
+        <li>隐私政策：<a href="https://developer.huawei.com/consumer/cn/doc/development/app/20213"
+            target="_blank">https://developer.huawei.com/consumer/cn/doc/development/app/20213</a></li>
+        <li>信息收集方式：加密和去标识化</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>12. 小米推送</h3>
+      <ul class="sdk-info">
+        <li>使用目的：推送消息</li>
+        <li>第三方名称：小米移动软件有限公司</li>
+        <li>涉及个人信息：设备标识符（如Android ID、OAID、GAID），设备信息</li>
+        <li>隐私政策：<a href="https://dev.mi.com/console/doc/detail?pId=1822"
+            target="_blank">https://dev.mi.com/console/doc/detail?pId=1822</a></li>
+        <li>信息收集方式：加密和去标识化</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>13. OPPO推送</h3>
+      <ul class="sdk-info">
+        <li>使用目的：推送消息</li>
+        <li>第三方名称：广东欢太科技有限公司</li>
+        <li>涉及个人信息：设备标识符（如IMEI、SIM卡序列号、IMSI、Android ID、GAID），应用信息（如APP包名及版本号，运行状态），网络信息（如IP或域名连接结果，当前网络类型）</li>
+        <li>隐私政策：<a href="https://open.oppomobile.com/wiki/doc#id=10288"
+            target="_blank">https://open.oppomobile.com/wiki/doc#id=10288</a></li>
+        <li>信息收集方式：加密和去标识化</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>14. VIVO推送</h3>
+      <ul class="sdk-info">
+        <li>使用目的：推送消息</li>
+        <li>第三方名称：维沃移动通信有限公司</li>
+        <li>涉及个人信息：设备标识符信息</li>
+        <li>隐私政策：<a href="https://dev.vivo.com.cn/documentCenter/doc/366"
+            target="_blank">https://dev.vivo.com.cn/documentCenter/doc/366</a></li>
+        <li>信息收集方式：加密和去标识化</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>15. 友盟SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：用于收集、分析用户活跃、新增等App运营数据、APP崩溃与卡顿监测</li>
+        <li>使用场景：用户操作APP时</li>
+        <li>第三方名称：北京锐讯灵通科技有限公司</li>
+        <li>涉及个人信息：手机状态和身份，获取位置信息， 设备信息、标识符（IMEI、Android_ID、如IDFV、IDFA、OAID）、位置信息</li>
+        <li>第三方官网链接：<a href="https://www.umeng.com/" target="_blank">https://www.umeng.com/</a></li>
+        <li>隐私政策：<a href="https://www.umeng.com/page/policy" target="_blank">https://www.umeng.com/page/policy</a></li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>16. 热云 SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：用于收集、分析用户活跃、新增等App运营数据</li>
+        <li>使用场景：用户操作APP时</li>
+        <li>第三方名称：北京热云科技有限公司</li>
+        <li>涉及个人信息：iOS广告标识符（IDFA和IDFV）、安卓广告主标识符（Android
+          ID）、网卡地址（MAC）、IP地址、国际移动设备识别码（IMEI）、运行中的进程、移动设备识别码（MEID）、匿名设备标识码（OAID）、设备硬件信息、系统信息、运行环境信息、风控信息</li>
+        <li>官网链接：<a href="https://www.reyun.com/" target="_blank">https://www.reyun.com/</a></li>
+        <li>隐私政策：<a href="https://www.reyun.com/privacyPolicy/" target="_blank">https://www.reyun.com/privacyPolicy/</a>
+        </li>
+        <li>信息收集方式：SDK采集</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>17. 热力引擎 SDK</h3>
+      <ul class="sdk-info">
+        <li>运营主体:汇量云（北京）科技有限公司</li>
+        <li>使用目的：基于设备信息用于生成脱敏的终端用户设备唯一性标识，以确保提供SDK服务；</li>
+        <li>涉及个人信息：唯一设备识别码：IMEI（可选）/IMEI2（可选）/Android
+          ID/GAID/OAID；事件发生时间/登录账号/UA/设备语言/设备所在时区/制造商/操作系统版本/屏幕高度/屏幕宽度/设备型号/设备名称/设备型号标识/网络状态/应用版本/应用版本号/包名/应用名称/渠道名称/浏览器/浏览器版本/当前页面的标题/当前页面的地址/跳转前页面的标题/跳转前页面的地址/设备唯一ID/设备当前时间/设备开机时间/广告追踪是否打开标识/ADServiceToken/设备屏幕密度/已安装软件包引荐来源网址/引荐来源网址点击时客户端时间/应用安装时的客户端时间/引荐来源网址点击时服务端时间/应用安装时的服务端时间/首次安装时的应用版本/应用免安装体验是否为过去7天内发布等（具体以您实际传输的字段为准）
+        </li>
+        <li>信息收集方式：加密和去标识化</li>
+
+        <li>隐私政策:<a href="https://www.solar-engine.com/privacyPolicy.html"
+            target="_blank">https://www.solar-engine.com/privacyPolicy.html</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>18. 穿山甲SDK</h3>
+      <ul class="sdk-info">
+        <li>使用目的：用于广告投放合作、广告归因、反作弊，统计分析改进性能和用户体验</li>
+        <li>第三方名称：北京巨量引擎网络技术有限公司</li>
+        <li>
+          涉及个人信息：设备品牌、型号、软件系统版本、分辨率、网络信号强度、设备语言、加速度传感器、磁场传感器、重力传感器、陀螺仪传感器，AndroidID、IP地址、无线网SSID名称、WiFi路由器MAC地址（BSSID）、WIFI扫描结果、设备的MAC地址、设备标识符（IMEI、MEID、IMSI、ICCID、OAID、GAID(仅GMS服务)、设备序列号build_serial，具体字段因软硬件版本不同而存在差异）；开发者应用名、应用包名、版本号、应用前后台状态、应用列表信息、运行中进程信息；对广告的展示、点击及转化等交互数据；位置信息；崩溃数据、性能数据；运营商信息、设备时区。
+        </li>
+        <li>隐私政策：<a href="https://www.csjplatform.com/privacy" target="_blank">https://www.csjplatform.com/privacy</a>
+        </li>
+        <li>信息收集方式：加密和去标识化</li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>19. 广点通转化SDK</h3>
+      <ul class="sdk-info">
+        <li>运营主体:深圳市腾讯计算机系统有限公司</li>
+        <li>使用目的:提供广告监测、广告归因、广告效果优化的基本功能</li>
+        <li>涉及个人信息:设备标识符（Android ID、OAID、IDFA、AAID等）、设备信息（设备型号、设备启动时间、系统语言等）、应用信息（开发者应用包名、使用状态等）、使用数据（广告曝光、广告点击数据等）；实现
+          SDK 产品功能所需的权限：联网权限、检测联网方式、读取电话状态、写入外置存储器等</li>
+        <li>信息收集方式：加密和去标识化</li>
+        <li>隐私政策:<a href="https://datanexus.qq.com/doc/develop/compliance/android/privacy_policy"
+            target="_blank">https://datanexus.qq.com/doc/develop/compliance/android/privacy_policy</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>20. 巨量引擎转化SDK</h3>
+      <ul class="sdk-info">
+        <li>运营主体:北京巨量引擎网络技术有限公司</li>
+        <li>使用目的：广告投放及归因、反作弊、统计分析、减少App崩溃、提供可靠稳定的服务</li>
+        <li>使用场景：向最终用户投放广告时使用</li>
+        <li>涉及个人信息：
+          <p>【Android】设备品牌、型号、操作系统、软件系统版本、IP地址、操作、使用、服务日志、UAID
+            Token、设备标识符：OAID、AndroidID、手机系统重启时间、磁盘总空间、系统总内存空间、应用安装时间、更新时间、开发者应用名、应用包名、运行中的进程信息、版本号、应用前后台状态、应用发布渠道、WIFI状态等基础信息
+          </p>
+          <p>【IOS】设备品牌、型号、操作系统、软件系统版本、IP地址、操作、使用、服务日志、UAID
+            Token、设备标识符（如IDFA、CPU数目等基础信息、IDFV、浏览器的类型和版本号、手机系统重启时间、磁盘总空间、系统总内存空间、应用安装时间、更新时间等基础信息 </p>
+        </li>
+        <li>收集方式：SDK自行采集</li>
+        <li>官网链接：<a href="https://open.oceanengine.com/index.html?rid=9albc3g2czv"
+            target="_blank">https://open.oceanengine.com/index.html?rid=9albc3g2czv</a></li>
+        <li>隐私政策:<a href="https://open.oceanengine.com/labels/7/docs/1708428054592516?origin=left_nav"
+            target="_blank">https://open.oceanengine.com/labels/7/docs/1708428054592516?origin=left_nav</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sdk-item">
+      <h3>21. 增长营销套件SDK</h3>
+      <ul class="sdk-info">
+        <li>运营主体: 北京火山引擎科技有限公司</li>
+        <li>使用目的：用于变现分组策略、数据统计分析</li>
+        <li>使用场景：用户操作APP时</li>
+        <li>
+          涉及个人信息：【仅Android】设备标识符（如AndroidID、硬件序列号build_serial、GAID、IMEI、MEID、设备MAC地址、OAID、IMSI、设备ICCID、运营商信息，具体字段因软硬件版本不同而存在差异）【仅
+          iOS】IDFA </li>
+        <li>官网链接：<a href="https://www.csjplatform.com/" target="_blank">https://www.csjplatform.com/</a></li>
+        <li>隐私政策:<a href="https://www.csjplatform.com/terms/gromoresdk-privacy"
+            target="_blank">https://www.csjplatform.com/terms/gromoresdk-privacy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer" style="color: transparent">
+      <p>再次感谢您对LoveCo的信任和使用！</p>
+      <p>武汉市礼弥科技有限公司</p>
+    </div>
+  </div>
+
+</body>
+</html>
